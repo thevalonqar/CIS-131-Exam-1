@@ -1,0 +1,30 @@
+/* reset styles */
+html, body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*background-image: url("../Exam 1/images/pizza_gif.gif");*/
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive !important;
+
+}
+
+.lead {
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-danger {
+  width: 50%;
+}
+
+@media (min-width: 576px) {
+  .form-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

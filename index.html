@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cheech's Pizza</title>
+
+    <!-- My Stylesheet  -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>Cheech's Pizza</h1>
+            <p class="lead">Hot and Fast, just like you like it!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- test comment -->
+    <br>
+    <form>
+      <div class="container">
+        <div class="form-group row">
+          <div class="col-sm-5">
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" class="form-control" id="nameInput"  placeholder="Name">
+          </div>
+          <div class="col-sm-5">
+              <label class="sr-only" for="phone">Phone Number</label>
+              <input type="number" class="form-control col-sm-2" id="phoneInput" placeholder="Phone Number">
+          </div>
+          <div class="col-sm-2">
+            <!-- <label class="col-sm-2" for="pizzaAmt">Number of Pizzas</label> -->
+            <select class="form-control" id="pizzaAmt">
+              <option value="Number of Pizzas" disabled="disabled" selected="selected">Number of Pizzas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 text-center">
+            <button type="button" class="btn btn-danger btn-lg">Let's Do it!</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <footer></footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
