@@ -3,6 +3,11 @@
 var i = 0;
 var totalPizzas = 10;
 var pTypes = ["Cheese", "Pepperoni", "Supreme", "Meat Lovers", "Hawaiian"];
+var userName = document.getElementById('nameInput');
+var userNumber = document.getElementById('phoneInput');
+var typeSelection = document.getElementById('pizzaType');
+
+
 
 
 //  FUnctions
@@ -35,6 +40,12 @@ function typeDropdown() {
 
   //Submit button
   function submitOrder() {
+    var pNumber = document.getElementById('pizzaAmt').value;
+
+    var pText = typeSelection.options[typeSelection.selectedIndex].text;
+    alert(pNumber + " " + pText);
+
+    //Hide/Show order
      var x = document.getElementById('customerOrder');
      var y = document.getElementById('submitButton');
     if (x.style.display == 'none') {
