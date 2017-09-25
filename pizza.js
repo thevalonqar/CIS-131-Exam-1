@@ -32,3 +32,16 @@ function typeDropdown() {
   } else if (window.attachEvent) {
     window.addEventListener("onload", typeDropdown);
   }
+
+  //Submit button
+  function submitOrder() {
+     var x = document.getElementById('customerOrder');
+     var y = document.getElementById('submitButton');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+        y.disabled = true;
+    } else {
+        x.style.display = 'none';
+    }
+
+  }

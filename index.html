@@ -4,7 +4,7 @@
       Exam 1  - Cheech's Pizzas
 
       Author:   James McAdoo
-      Date:     9/25/17 
+      Date:     9/25/17
  -->
 
 <html lang="en">
@@ -32,7 +32,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h1>Cheech's Pizza</h1>
+            <h1 class="heading">Cheech's Pizza</h1>
             <p class="lead">Hot and Fast, just like you like it!</p>
           </div>
         </div>
@@ -89,11 +89,18 @@
         <!-- Submit Button  -->
         <div class="row">
           <div class="col-sm-12 text-center">
-            <button type="button" class="btn btn-danger btn-lg">Let's Do it!</button>
+            <button type="button" class="btn btn-danger btn-lg" id="submitButton" onclick="submitOrder()">Let's Do it!</button>
           </div>
         </div>
       </div>
     </form>
+
+    <div class="container" id="customerOrder">
+      <div class="well">
+        <h3 class="heading" id="orderHeading">Your Order:</h3>
+        <p class="lead">test paragraph text</p>
+      </div>
+    </div>
 
     <!-- PAGE FOOTER -->
     <footer></footer>

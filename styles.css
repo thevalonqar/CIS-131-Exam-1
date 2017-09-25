@@ -6,10 +6,10 @@ html, body {
 }
 
 body {
-  /*background-image: url("../Exam 1/images/pizza_gif.gif");*/
+  /*background-image: url("../CIS-Exam-1/images/pizza_gif.gif");*/
 }
 
-h1 {
+.heading {
   font-family: 'Permanent Marker', cursive !important;
 
 }
@@ -20,6 +20,10 @@ h1 {
 
 .btn-danger {
   width: 50%;
+}
+
+.well {
+  margin-top: 10%;
 }
 
 @media (min-width: 576px) {
