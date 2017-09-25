@@ -32,15 +32,17 @@
     <form>
       <div class="container">
         <div class="form-group row">
-          <div class="col-sm-5">
+          <div class="col-sm-6">
             <label class="sr-only" for="name">Name</label>
             <input type="text" class="form-control" id="nameInput"  placeholder="Name">
           </div>
-          <div class="col-sm-5">
+          <div class="col-sm-6">
               <label class="sr-only" for="phone">Phone Number</label>
               <input type="number" class="form-control col-sm-2" id="phoneInput" placeholder="Phone Number">
           </div>
-          <div class="col-sm-2">
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-6">
             <!-- <label class="col-sm-2" for="pizzaAmt">Number of Pizzas</label> -->
             <select class="form-control" id="pizzaAmt">
               <option value="Number of Pizzas" disabled="disabled" selected="selected">Number of Pizzas</option>
@@ -56,9 +58,25 @@
               <option value="10">10</option>
             </select>
           </div>
+          <div class="col-sm-6">
+            <!-- <label class="col-sm-2" for="pizzaAmt">Number of Pizzas</label> -->
+            <select class="form-control" id="pizzaType">
+              <option value="Number of Pizzas" disabled="disabled" selected="selected">Type of  Pizzas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
         </div>
         <div class="row">
-          <div class="col-sm-10 text-center">
+          <div class="col-sm-12 text-center">
             <button type="button" class="btn btn-danger btn-lg">Let's Do it!</button>
           </div>
         </div>
