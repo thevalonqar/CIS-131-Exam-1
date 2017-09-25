@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+      CIS 131 - W01
+      Exam 1  - Cheech's Pizzas
+
+      Author:   James McAdoo
+      Date:     9/25/17 
+ -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,6 +27,7 @@
 
   </head>
   <body>
+    <!-- MAIN HEADER -->
     <div class="jumbotron">
       <div class="container">
         <div class="row">
@@ -29,8 +38,10 @@
         </div>
       </div>
     </div>
-    <!-- test comment -->
-    <br>
+
+    <!-- CUSTOMER INPUT FORM  -->
+
+    <!-- Name and Phone Number Input -->
     <form>
       <div class="container">
         <div class="form-group row">
@@ -43,9 +54,10 @@
               <input type="number" class="form-control col-sm-2" id="phoneInput" placeholder="Phone Number">
           </div>
         </div>
+
+        <!-- Number of Pizzas Dropdown -->
         <div class="form-group row">
           <div class="col-sm-6">
-            <!-- <label class="col-sm-2" for="pizzaAmt">Number of Pizzas</label> -->
             <select class="form-control" id="pizzaAmt">
               <option value="Number of Pizzas" disabled="disabled" selected="selected">Number of Pizzas</option>
               <option value="1" id="ddNum0"></option>
@@ -60,8 +72,9 @@
               <option value="10" id="ddNum9"></option>
             </select>
           </div>
+
+          <!-- Type of Pizzas Dropdown -->
           <div class="col-sm-6">
-            <!-- <label class="col-sm-2" for="pizzaAmt">Number of Pizzas</label> -->
             <select class="form-control" id="pizzaType">
               <option value="Number of Pizzas" disabled="disabled" selected="selected">Type of  Pizzas</option>
               <option value="1" id="ddType0"></option>
@@ -69,10 +82,11 @@
               <option value="3" id="ddType2"></option>
               <option value="4" id="ddType3"></option>
               <option value="5" id="ddType4"></option>
-
             </select>
           </div>
         </div>
+
+        <!-- Submit Button  -->
         <div class="row">
           <div class="col-sm-12 text-center">
             <button type="button" class="btn btn-danger btn-lg">Let's Do it!</button>
@@ -80,6 +94,8 @@
         </div>
       </div>
     </form>
+
+    <!-- PAGE FOOTER -->
     <footer></footer>
 
   <!-- My .js file -->
