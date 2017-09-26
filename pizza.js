@@ -6,7 +6,8 @@ var pTypes = ["Cheese", "Pepperoni", "Supreme", "Meat Lovers", "Hawaiian"];
 var userName = document.getElementById('nameInput');
 var userNumber = document.getElementById('phoneInput');
 var typeSelection = document.getElementById('pizzaType');
-
+var orderBox = document.getElementById('customerOrder');
+var sBtn = document.getElementById('submitButton');
 
 
 
@@ -19,6 +20,7 @@ function numberDropdown() {
     }
 }
 
+//Event Listener for Number of Pizzas Dropdown on page load
   if (window.addEventListener) {
     window.addEventListener("load", numberDropdown, false);
   } else if (window.attachEvent) {
@@ -31,28 +33,33 @@ function typeDropdown() {
       document.getElementById("ddType" + i).innerHTML = pTypes[i];
     }
 }
-
+//Event Listener for Type of Pizzas Dropdown on page load
   if (window.addEventListener) {
     window.addEventListener("load", typeDropdown, false);
   } else if (window.attachEvent) {
     window.addEventListener("onload", typeDropdown);
   }
 
-  //Submit button
+  //Submit buttons
   function submitOrder() {
     var pNumber = document.getElementById('pizzaAmt').value;
-
     var pText = typeSelection.options[typeSelection.selectedIndex].text;
-    alert(pNumber + " " + pText);
+    // alert(pNumber + " " + pText);
+    document.getElementById('orderNum').innerHTML = pNumber;
+    document.getElementById('orderType').innerHTML = pText;
 
     //Hide/Show order
-     var x = document.getElementById('customerOrder');
-     var y = document.getElementById('submitButton');
-    if (x.style.display == 'none') {
-        x.style.display = 'block';
-        y.disabled = true;
+    if (orderBox.style.display == 'none') {
+        orderBox.style.display = 'block';
+        // sBtn.disabled = true;
     } else {
-        x.style.display = 'none';
+        orderBox.style.display = 'none';
     }
-
   }
+
+//Event Listerner for the Submit Button on click
+    if (sBtn.addEventListener) {
+      sBtn.addEventListener("click", submitOrder, false);
+    } else if (window.attachEvent) {
+      sBtn.addEventListener("onload", submitOrder);
+    }
