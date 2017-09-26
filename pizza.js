@@ -2,6 +2,7 @@
 
 var i = 0;
 var totalPizzas = 10;
+var pizzaCost = 10.99;
 var pTypes = ["Cheese", "Pepperoni", "Supreme", "Meat Lovers", "Hawaiian"];
 var userName = document.getElementById('nameInput');
 var userNumber = document.getElementById('phoneInput');
@@ -40,22 +41,33 @@ function typeDropdown() {
     window.addEventListener("onload", typeDropdown);
   }
 
-  //Submit buttons
+  //Submit button
   function submitOrder() {
+    if (pNumber != "Number of Pizzas" && pText != "Type of Pizzas") {
+      orderBox.style.display = 'block';
+    }
+
     var pNumber = document.getElementById('pizzaAmt').value;
     var pText = typeSelection.options[typeSelection.selectedIndex].text;
-    // alert(pNumber + " " + pText);
+
+    var subTotal = calcTotal(pNumber);
+    var tax = calcTax(pNumber);
+
+
     document.getElementById('orderNum').innerHTML = pNumber;
     document.getElementById('orderType').innerHTML = pText;
+    document.getElementById('subTotal').innerHTML = subTotal;
+    document.getElementById('tax').innerHTML = tax;
+    document.getElementById('orderTotal').innerHTML = subTotal + tax;
+}
 
-    //Hide/Show order
-    if (orderBox.style.display == 'none') {
-        orderBox.style.display = 'block';
-        // sBtn.disabled = true;
-    } else {
-        orderBox.style.display = 'none';
-    }
-  }
+function calcTotal(pNumber) {
+  return pizzaCost * pNumber;
+}
+
+function calcTax (pNumber){
+  return pNumber * 0.76;
+}
 
 //Event Listerner for the Submit Button on click
     if (sBtn.addEventListener) {

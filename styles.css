@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  /*background-image: url("../CIS-Exam-1/images/pizza_gif.gif");*/
+  background-image: url("../CIS-131-Exam-1/images/large.gif");
 }
 
 .heading {
@@ -22,9 +22,11 @@ body {
   width: 50%;
 }
 
-/*.well {
-  margin-top: 10%;
-}*/
+#customerOrder{
+  display: none;
+  background-color: #eee;
+
+}
 
 @media (min-width: 576px) {
   .form-control {
