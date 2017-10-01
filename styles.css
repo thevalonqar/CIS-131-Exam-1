@@ -1,19 +1,16 @@
 /* reset styles */
-html, body {
+/*html, body {
   border: 0;
   padding: 0;
   margin: 0;
-}
+}*/
 
 body {
-  background-image: url("../CIS-131-Exam-1/images/large.jpg");
-  
-  display:
+  background-image: url("../CIS-131-Exam-1-master/images/large.jpg");
 }
 
 .heading {
   font-family: 'Permanent Marker', cursive !important;
-
 }
 
 .lead {
@@ -24,10 +21,26 @@ body {
   width: 50%;
 }
 
+.jumbotron{
+  margin-top: 2%;
+  background-color: #D9534F !important;
+  border-style: solid;
+  border-color: #D43F3A;
+}
+
 #customerOrder{
   display: none;
-  background-color: #eee;
+  background-color: #D9534F !important;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #D43F3A;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 50%;
+}
 
+span {
+  text-align: center;
 }
 
 @media (min-width: 576px) {
