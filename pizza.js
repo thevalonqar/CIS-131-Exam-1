@@ -41,24 +41,26 @@ function typeDropdown() {
     window.addEventListener("onload", typeDropdown);
   }
 
-  //Submit button
+  //------- SUBMIT BUTTON -----------//
   function submitOrder() {
     if (pNumber != "Number of Pizzas" && pText != "Type of Pizzas") {
       orderBox.style.display = 'block';
     }
-
+    var uName = userName.value;
+    var uPHone = userNumber.value;
     var pNumber = document.getElementById('pizzaAmt').value;
     var pText = typeSelection.options[typeSelection.selectedIndex].text;
 
     var subTotal = calcTotal(pNumber);
     var tax = calcTax(pNumber);
 
-
+    document.getElementById('orderName').innerHTML = uName;
+    document.getElementById('orderPhone').innerHTML = uPHone;
     document.getElementById('orderNum').innerHTML = pNumber;
     document.getElementById('orderType').innerHTML = pText;
-    document.getElementById('subTotal').innerHTML = subTotal;
-    document.getElementById('tax').innerHTML = tax;
-    document.getElementById('orderTotal').innerHTML = subTotal + tax;
+    document.getElementById('subTotal').innerHTML = "$" + subTotal.toFixed(2);
+    document.getElementById('tax').innerHTML = "$" + tax.toFixed(2);
+    document.getElementById('orderTotal').innerHTML = "$" + (subTotal + tax).toFixed(2);
 }
 
 function calcTotal(pNumber) {
