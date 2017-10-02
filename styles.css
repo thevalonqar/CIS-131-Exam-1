@@ -6,7 +6,7 @@
 }*/
 
 body {
-  background-image: url("../CIS-131-Exam-1-master/images/large.jpg");
+  background-image: url("/Users/Jan/github/CIS-131-Exam-1/images/large.jpg");
 }
 
 .heading {
@@ -41,6 +41,7 @@ body {
 
 span {
   text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 @media (min-width: 576px) {
